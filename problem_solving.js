@@ -92,3 +92,79 @@
 
 // ODD OR EVEN
 // ----------------------------------------------------------------------------------------------------------------
+
+// const arr=[1,2,3,4];
+
+// let search=4;
+
+// let flag=false;
+
+// for(let i=0;i<arr.length;i++){
+
+     
+
+//      if(arr[i]==search){
+
+          
+//           flag=true;
+//           break;     
+//      }
+
+// }
+
+// if(flag==true){
+//      console.log(search+" fount");
+     
+// }else{
+//      console.log("not fount");
+     
+// }
+
+// SEARCH
+// ------------------------------------------------------------------------------------------------------------
+
+// const arr1 = [1,2,3]
+// const arr2 = [4,5,6]
+// const mergr=[]
+// pointer=0
+// for(i=0;i<arr1.length;i++){
+
+//      mergr[pointer]=arr1[i]
+//      pointer++
+// }
+// for(i=0;i<arr2.length;i++){
+//      mergr[pointer]=arr2[i]
+//       pointer++
+// }
+
+// console.log(mergr);
+
+
+// MERG TWO ARRAY
+// ----------------------------------------------------------------------------------------------------
+
+const arr = [10]
+let larg=-1
+let secont=-1
+
+for(i=0;i<arr.length;i++){
+
+     if (larg<arr[i]) {
+          secont=larg
+          larg=arr[i]
+          
+     }else if(arr[i]>secont && arr[i]<larg){
+          secont=arr[i]
+     }
+}
+
+if(secont===-1){
+      console.log("not found")
+
+}else{
+console.log(secont);
+}
+     
+
+     // SECONT LARGEST NUMBER
+     // -----------------------------------------------------------------------------------------
