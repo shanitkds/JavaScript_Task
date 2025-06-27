@@ -143,28 +143,72 @@
 // MERG TWO ARRAY
 // ----------------------------------------------------------------------------------------------------
 
-const arr = [10]
-let larg=-1
-let secont=-1
+// const arr = [10]
+// let larg=-1
+// let secont=-1
 
-for(i=0;i<arr.length;i++){
+// for(i=0;i<arr.length;i++){
 
-     if (larg<arr[i]) {
-          secont=larg
-          larg=arr[i]
+//      if (larg<arr[i]) {
+//           secont=larg
+//           larg=arr[i]
           
-     }else if(arr[i]>secont && arr[i]<larg){
-          secont=arr[i]
-     }
-}
+//      }else if(arr[i]>secont && arr[i]<larg){
+//           secont=arr[i]
+//      }
+// }
 
-if(secont===-1){
-      console.log("not found")
+// if(secont===-1){
+//       console.log("not found")
 
-}else{
-console.log(secont);
-}
+// }else{
+// console.log(secont);
+// }
      
 
      // SECONT LARGEST NUMBER
      // -----------------------------------------------------------------------------------------
+
+// const arr=[1,2,4,9,5,6,7,8]
+// let first=0
+// let secont=0
+// flag=false
+// for(i=0;i<arr.length;i++){
+//      secont=first
+//      first=arr[i]
+     
+//      if(first<secont){
+//           flag=true
+//           break
+//      }
+     
+// }
+
+// if(flag==true){
+//      console.log("not sorted")
+// }else{
+//      console.log("sorted")
+// }
+
+// TWO CHECKING THE ARRAY IS SORTED OR NOT
+// --------------------------------------------------------------------------------------
+
+const arr=[1,2,2,2,3,4,3,3,4,2,3,6,7,4]
+
+const count={}
+ var num
+for(i=0;i<arr.length;i++){
+      num=arr[i]
+     if(count[num]){
+          count[num]++
+     }else{
+
+          count[num]=1
+     }
+}
+
+for(let key in count){
+     console.log(key +" : "+ count[key]);
+}
+
+// FREQUNCY OF EACH ELEMENT IN ARRAY
